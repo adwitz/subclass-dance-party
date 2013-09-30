@@ -19,12 +19,15 @@
 // };
 
 var BlinkyDancer = function(top, left, timeBetweenSteps){
-  this.blinkyDancer = makeDancer(top, left, timeBetweenSteps);
-  this.oldStep = this.blinkyDancer.step;
+  Dancer.apply(this, arguments);
 };
 
+BlinkyDancer.prototype = Object.create(Dancer.prototype);
+BlinkyDancer.prototype.constructor = BlinkyDancer;
+
 BlinkyDancer.prototype.step = function(){
-  this.oldStep();
-  this.blinkyDancer.$node.toggle();
+  //console.log(this.step);
+  Dancer.prototype.step.apply(this);
+  this.$node.toggle();
 };
-//BlinkyDancer.prototype = inherit(MakeDancer.prototype);
+

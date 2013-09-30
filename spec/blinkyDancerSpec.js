@@ -7,7 +7,6 @@ describe("blinkyDancer", function() {
   beforeEach(function() {
     console.log('confirm'); 
     clock = sinon.useFakeTimers();
-    debugger;
     blinkyDancer = new BlinkyDancer(10, 20, timeBetweenSteps);
   });
 
