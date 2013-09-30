@@ -14,9 +14,9 @@ var makeDancer = function(top, left, timeBetweenSteps){
   dancer.step();
 
   dancer.setPosition = function(top, left){
-    /* Use css top and left properties to position our <span> tag
-     * where it belongs on the page. See http://api.jquery.com/css/
-     */
+     // Use css top and left properties to position our <span> tag
+     // where it belongs on the page. See http://api.jquery.com/css/
+     
     var styleSettings = {
       top: top,
       left: left
@@ -30,3 +30,24 @@ var makeDancer = function(top, left, timeBetweenSteps){
 
   return dancer;
 };
+
+// var MakeDancer = function(top, left, timeBetweenSteps){
+//   this.dancer = {};
+//   this.dancer.$node = $('<span class="dancer"></span>');
+//   this.dancer.step();
+//   this.dancer.setPosition(top, left);
+// };
+
+// MakeDancer.prototype.step = function(){
+//   setTimeout(this.step, timeBetweenSteps);
+// };
+
+// MakeDancer.prototype.setPosition = function(top, left){
+//   this.styleSettings = {
+//     top: top,
+//     left: left
+//   };
+//   this.dancer.$node.css(styleSettings);
+// };
+
+
