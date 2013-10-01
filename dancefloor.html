@@ -6,12 +6,15 @@
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/slidyDancer.js"></script>
   </head>
   <body>
 
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SlidyDancer">add a slidy dancer</a>
+      <a href="#" class="moveDancerButton" data-dancer-maker-function-name="MoveDancer">move a dancer</a>
     </div>
 
     <script>
@@ -44,6 +47,11 @@
           );
 
           $('body').append(dancer.$node);
+        });
+
+        $('.moveDancerButton').on("click", function(){
+          var dots = $('.dancer');
+          dots.animate({right: '100px'});
         });
       });
     </script>
