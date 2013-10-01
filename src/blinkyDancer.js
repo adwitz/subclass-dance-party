@@ -9,3 +9,8 @@ BlinkyDancer.prototype.step = function(){
   Dancer.prototype.step.apply(this);
   this.$node.toggle();
 };
+
+BlinkyDancer.prototype.lineUp = function() {
+  this.$node.stop().animate({left: 0}, 100, function() {
+  });
+};

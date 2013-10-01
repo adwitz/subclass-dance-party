@@ -10,3 +10,8 @@ TriDancer.prototype.step = function(){
   Dancer.prototype.step.apply(this);
   this.$node.toggleClass('tri2');
 };
+
+TriDancer.prototype.lineUp = function() {
+  this.$node.stop().animate({left: 1850}, 100, function() {
+  });
+};

@@ -49,9 +49,9 @@ body, a:link, a:visited, a:active{
 
 .slider {
   border: 20px solid aqua;
-/*  border-radius:20px;
-*/  position:absolute;
-}
+  border-radius:50%;
+  position:absolute;
+  }
 
 .thin {
   border: 20px solid beige;
@@ -68,7 +68,6 @@ body, a:link, a:visited, a:active{
 .flash {
   border: 20px solid purple;
   border-radius: 50%;
-  transform: scale(1, 1.5);
   position: absolute;
 }
 
