@@ -9,5 +9,4 @@ TriDancer.prototype.constructor = TriDancer;
 TriDancer.prototype.step = function(){
   Dancer.prototype.step.apply(this);
   this.$node.toggleClass('tri2');
-  //this.$node.rotate(45);
 };

@@ -10,32 +10,19 @@ FattyDancer.prototype.step = function(){
   Dancer.prototype.step.apply(this);
   var that = this.$node;
   var flag = 1;
-  //var toggle = that.toggleClass('fatty');
-  //toggle.toggleClass('flash');
   var expand = function(){
-    setInterval(function(){
-      if(flag == 1){
+    setTimeout(function(){
+      if(flag === 1){
         flag = -1;
       } else {
         flag = 1;
       }
-      that.animate({"width": '+='+(flag*200),
-    "height": '+='+(flag*200),
-    "left": "+="+(flag*50),
-    "right": "+="+(flag*50)}, 300);
+      that.animate({"width": '+='+(flag*50),
+    "height": '+='+(flag*50),
+    "left": "+="+(flag*30),
+    "right": "+="+(flag*30)}, 300);
     }, 300);
-    that.toggleClass('fatty');
+    that.toggleClass('fatty').fadeToggle();
   };
   expand();
-  // var circleInflate = function(){
-  //   that.animate({radius: 50}, 300, function(){
-  //     circleDeflate();
-  //   });
-  // };
-  // var circleDeflate = function(){
-  //   that.animate({radius: 20}, 300, function(){
-  //     circleInflate();
-  //   });
-  // };
-  // circleInflate();
 };
