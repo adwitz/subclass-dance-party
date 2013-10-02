@@ -51,16 +51,23 @@ body, a:link, a:visited, a:active{
   border: 20px solid aqua;
   border-radius:50%;
   position:absolute;
+  -webkit-transition-duration: 2.0s;
+  -webkit-transition-property: transform;
   }
+
+.slider1 {
+  -webkit-transform: translateX(100px);
+}
 
 .thin {
   border: 20px solid beige;
   border-radius: 50%;
   position: absolute;
+  -webkit-transition: border 2s, -webkit-transform 2s;
 }
 
 .fatty {
-  border: 20px solid pink;
+  border: 100px solid pink;
   border-radius: 50%;
   position: absolute;
 }
