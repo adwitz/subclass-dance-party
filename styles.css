@@ -91,3 +91,11 @@ body, a:link, a:visited, a:active{
   -webkit-transform: rotate(90deg);
 }
 
+.skater {
+  background-image: url('/Users/hackreactor/code/adwitz/2013-09-subclass-dance-party/src/skates.jpg');
+  width: 100px;
+  height: 400px;
+  /*position: absolute;*/
+  display: block;
+}
+
