@@ -11,6 +11,6 @@ BlinkyDancer.prototype.step = function(){
 };
 
 BlinkyDancer.prototype.lineUp = function() {
-  this.$node.stop().animate({left: 0}, 100, function() {
+  this.$node.stop().animate({left: 33}, 100, function() {
   });
 };
